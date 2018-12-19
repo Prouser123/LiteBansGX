@@ -32,21 +32,26 @@ public class Main extends JavaPlugin
         this.setEnabled(true);
 		getLogger().info("LiteBansGUI V" + VarUtilType.getVersion() + " started!");
 		this.getLogger().info("LiteBansGUI V" + VarUtilType.getVersion() + " checking for updates...");
-        this.checker = new UpdateChecker(this);
-		if (this.checker.isConnected()) {
-			if (this.checker.hasUpdate()) {
-				getServer().getConsoleSender().sendMessage("------------------------");
-				getServer().getConsoleSender().sendMessage("LiteBansGUI is outdated!");
-				getServer().getConsoleSender().sendMessage("Newest version: " + this.checker.getLatestVersion());
-				getServer().getConsoleSender().sendMessage("Your version: " + Main.plugin.getDescription().getVersion());
-				getServer().getConsoleSender().sendMessage("Please Update Here: https://www.spigotmc.org/resources/52072");
-				getServer().getConsoleSender().sendMessage("------------------------");
-			} else {
-				getServer().getConsoleSender().sendMessage("------------------------");
-				getServer().getConsoleSender().sendMessage("LiteBansGUI is up to date!");
-				getServer().getConsoleSender().sendMessage("------------------------");
-			}
-		}
+        if (getConfig().getBoolean("Update.Enabled")) {
+    		this.checker = new UpdateChecker(this);
+    		
+    		if (this.checker.isConnected()) {
+    			if (this.checker.hasUpdate()) {
+    				getServer().getConsoleSender().sendMessage("------------------------");
+    				getServer().getConsoleSender().sendMessage("LiteBansGUI is outdated!");
+    				getServer().getConsoleSender().sendMessage("Newest version: " + this.checker.getLatestVersion());
+    				getServer().getConsoleSender().sendMessage("Your version: " + getDescription().getVersion());
+    				getServer().getConsoleSender().sendMessage("Please Update Here: https://www.spigotmc.org/resources/52072");
+    				getServer().getConsoleSender().sendMessage("------------------------");
+    			} else {
+    				getServer().getConsoleSender().sendMessage("------------------------");
+    				getServer().getConsoleSender().sendMessage("LiteBansGUI is up to date!");
+    				getServer().getConsoleSender().sendMessage("------------------------");
+    			}
+    		}
+        } else {
+        	getServer().getConsoleSender().sendMessage("The LiteBansGUI update checker has been disabled in the config.");
+        }
 	}
 
 

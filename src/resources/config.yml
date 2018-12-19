@@ -5,10 +5,12 @@
 
 #=======================================================  
 
-#Permssion: litebansgui.update
 Update:
+  # Check for updates?
   Enabled: true
-#Enables if there is a message on-join when the plugin is outdated. 
+  
+  # If true, display a message to the player if they have the litebansgui.update command.
+  ShowOnJoin: true
 
 #=======================================================  
 
