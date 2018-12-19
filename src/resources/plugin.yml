@@ -1,0 +1,10 @@
+main: me.noodles.gui.main.Main
+name: LiteBansGX
+version: ${project.version}
+author: [Noodles, Prouser123]
+depend: [LiteBans]
+commands:
+   punish:
+      description: Open the punishment menu.
+      usage: /punish (player)
+      permission: punish.use
