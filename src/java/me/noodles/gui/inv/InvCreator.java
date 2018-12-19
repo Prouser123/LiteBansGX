@@ -5,11 +5,11 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 
 public class InvCreator {
-
-	    public static Inventory Main;
+	
+	public static Inventory Main;
 	    
-	    static {
-	        InvCreator.Main = Bukkit.createInventory(null, 54, InvNames.Main);
-	    }
+	static {
+        InvCreator.Main = Bukkit.createInventory(null, 54, InvNames.Main);
+	}
 	    
 }
