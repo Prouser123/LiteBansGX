@@ -1,12 +1,8 @@
 package me.noodles.gui.inv;
 
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
-
-import me.noodles.gui.main.Main;
-
 
 public class ClickEvents implements Listener {
 	
@@ -18,7 +14,7 @@ public class ClickEvents implements Listener {
                 return;
             }
         }
-        Player p = (Player)e.getWhoClicked();
+        // Player p = (Player)e.getWhoClicked();
         if (e.getCurrentItem() == null)
         	return;
       
