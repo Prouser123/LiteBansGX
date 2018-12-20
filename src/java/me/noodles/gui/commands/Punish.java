@@ -88,8 +88,6 @@ public class Punish implements Listener, CommandExecutor {
 		
 	@EventHandler
 	public void onClick(InventoryClickEvent e) {
-		if (e.getInventory().getName().equals(InvNames.Main)) {
-		}
 			
 		Player p = (Player)e.getWhoClicked();
 		
