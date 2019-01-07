@@ -3,17 +3,19 @@ package me.noodles.gui.main;
 import java.io.File;
 import java.io.IOException;
 
-import me.noodles.gui.MetricsLite;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+
 import me.noodles.gui.commands.Punish;
 import me.noodles.gui.inv.ClickEvents;
 import me.noodles.gui.main.updatechecker.JoinExample;
 import me.noodles.gui.main.updatechecker.UpdateChecker;
+
+import org.bstats.bukkit.Metrics;
 
 public class Main extends JavaPlugin
 {
