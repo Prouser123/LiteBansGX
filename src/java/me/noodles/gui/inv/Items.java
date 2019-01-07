@@ -14,7 +14,7 @@ import me.noodles.gui.main.Main;
 
 public class Items {
 
-    public static ItemStack Glass(Player p) {
+    public static ItemStack glass(Player p) {
         ItemStack stone = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short)7);
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(" ");
@@ -28,7 +28,7 @@ public class Items {
     }
 
     
-    public static ItemStack ClientModOffences(Player p) {
+    public static ItemStack clientModOffences(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("ClientModOffensesItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("ClientModOffensesName")));
@@ -40,7 +40,7 @@ public class Items {
         return stone;
     }
     
-    public static ItemStack GeneralOffences(Player p) {
+    public static ItemStack generalOffences(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("GeneralOffensesItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("GeneralOffensesName")));
@@ -52,7 +52,7 @@ public class Items {
         return stone;
     }
     
-    public static ItemStack ChatOffences(Player p) {
+    public static ItemStack chatOffences(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("ChatOffensesItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("ChatOffensesName")));
@@ -65,7 +65,7 @@ public class Items {
     }
     
     
-    public static ItemStack PermMute(Player p) {
+    public static ItemStack permMute(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("PermanentMuteItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("PermanentMuteName")));
@@ -76,7 +76,7 @@ public class Items {
         stone.setItemMeta(stonem);
         return stone;
     }
-    public static ItemStack PermBan(Player p) {
+    public static ItemStack permBan(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("PermanentBanItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("PermanentBanName")));
@@ -88,7 +88,7 @@ public class Items {
         return stone;
     }
 
-    public static ItemStack IPBan(Player p) {
+    public static ItemStack ipBan(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("IPBanItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("IPBanName")));
@@ -99,7 +99,7 @@ public class Items {
         stone.setItemMeta(stonem);
         return stone;
     }
-    public static ItemStack IPMute(Player p) {
+    public static ItemStack ipMute(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("IPMuteItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("IPMuteName")));
@@ -111,7 +111,7 @@ public class Items {
         return stone;
     }
     
-    public static ItemStack Severity1Mute(Player p) {
+    public static ItemStack severity1Mute(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("Severity1MuteItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("Severity1MuteName")));
@@ -123,7 +123,7 @@ public class Items {
         return stone;
     }
 
-    public static ItemStack Warning(Player p) {
+    public static ItemStack warning(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("WarningItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("WarningName")));
@@ -135,7 +135,7 @@ public class Items {
         return stone;
     }
     
-    public static ItemStack Severity1GeneralBan(Player p) {
+    public static ItemStack severity1GeneralBan(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("Severity1GeneralBanItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("Severity1GeneralBanName")));
@@ -147,7 +147,7 @@ public class Items {
         return stone;
     }
     
-    public static ItemStack Severity1ClientBan(Player p) {
+    public static ItemStack severity1ClientBan(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("Severity1ClientBanItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("Severity1ClientBanName")));
@@ -158,7 +158,7 @@ public class Items {
         stone.setItemMeta(stonem);
         return stone;
     }
-    public static ItemStack Severity2Mute(Player p) {
+    public static ItemStack severity2Mute(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("Severity2MuteItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("Severity2MuteName")));
@@ -169,7 +169,7 @@ public class Items {
         stone.setItemMeta(stonem);
         return stone;
     }
-    public static ItemStack Severity2ClientBan(Player p) {
+    public static ItemStack severity2ClientBan(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("Severity2ClientBanItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("Severity2ClientBanName")));
@@ -180,7 +180,7 @@ public class Items {
         stone.setItemMeta(stonem);
         return stone;
     }
-    public static ItemStack Severity3Mute(Player p) {
+    public static ItemStack severity3Mute(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("Severity3MuteItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("Severity3MuteName")));
@@ -191,7 +191,7 @@ public class Items {
         stone.setItemMeta(stonem);
         return stone;
     }
-    public static ItemStack Severity3ClientBan(Player p) {
+    public static ItemStack severity3ClientBan(Player p) {
         ItemStack stone = new ItemStack(Material.getMaterial(Main.plugin.getguiitems1Config().getString("Severity3ClientBanItem")));
         ItemMeta stonem = stone.getItemMeta();
         stonem.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.plugin.getguiitems1Config().getString("Severity3ClientBanName")));

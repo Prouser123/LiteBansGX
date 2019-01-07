@@ -30,7 +30,7 @@ public class Main extends JavaPlugin
         this.registerEvents();
         this.registerCommands();
         plugin = this;
-        Metrics metrics = new Metrics(this);
+        new Metrics(this);
         this.setEnabled(true);
 		getLogger().info("LiteBansGUI V" + VarUtilType.getVersion() + " started!");
 		this.getLogger().info("LiteBansGUI V" + VarUtilType.getVersion() + " checking for updates...");
