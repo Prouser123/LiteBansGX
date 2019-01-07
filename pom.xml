@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>LiteBansGX</groupId>
   <artifactId>LiteBansGX</artifactId>
-  <version>0.2-SNAPSHOT-b2</version>
+  <version>0.2-SNAPSHOT-b5</version>
   <name>LiteBansGX</name>
   <description>Fork of LiteBansGUI</description>
   <build>
